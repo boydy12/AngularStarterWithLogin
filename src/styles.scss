@@ -1,0 +1,35 @@
+@import "tailwind-styles.css";
+@import "fonts/style.css";
+@import "../node_modules/ag-grid-community/src/styles/ag-grid.scss";
+@import "../node_modules/ag-grid-community/src/styles/ag-theme-alpine/sass/ag-theme-alpine-mixin.scss";
+
+.ag-theme-alpine {
+  @include ag-theme-alpine();
+}
+
+[data-icon]:before {
+  font-family: "icomoon";
+  content: attr(data-icon);
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+* {-webkit-font-smoothing: antialiased;}
+
+.spinner {
+  animation-name: spin;
+  animation-duration: 1200ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}

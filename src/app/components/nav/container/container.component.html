@@ -1,0 +1,12 @@
+<div *ngIf="loggedIn" class="flex bg-white h-full rounded">
+	<app-side-bar class="relative h-full w-96 pt-10 bg-swatch-2">
+	</app-side-bar>
+	<div class="w-full h-full relative bg-swatch-1 p-5 rounded-md">
+		<app-center-main></app-center-main>
+	</div>
+</div>
+
+<div *ngIf="!loggedIn" class="flex justify-center h-full items-center">
+	<app-login *ngIf="loaded" [message]="message"></app-login>
+	<i *ngIf="!loaded" class="icon icon-spinner10 spinner text-6xl"></i>
+</div>

@@ -1,0 +1,7 @@
+<li class="h-12 block m-5 rounded-lg flex items-center text-white active:text-swatch-1">
+	<ng-content></ng-content>
+	<a *ngIf="route" routerLink="{{route}}">
+		<i class="icon-{{icon}} text-2xl ml-5 inline-block transform translate-y-1/5"></i>
+		<span class="text-lg ml-5 capitalize">{{route}}</span>
+	</a>
+</li>

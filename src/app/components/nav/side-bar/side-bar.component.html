@@ -1,0 +1,15 @@
+
+<nav class="h-full">
+	<ul class="h-full">
+
+		<app-side-bar-item [route]="'home'" [icon]="'home'"></app-side-bar-item>
+
+		<!-- logout -->
+		<app-side-bar-item class="bottom-0 absolute">
+			<button (click)="signOut()">
+				<i class="icon-exit text-2xl ml-5 inline-block transform translate-y-1/5"></i>
+				<span class="text-lg ml-5">Sign Out</span>
+			</button>
+		</app-side-bar-item>
+	</ul>
+</nav>
